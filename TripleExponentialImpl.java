@@ -162,11 +162,9 @@ public class TripleExponentialImpl {
     private static double calculateInitialLevel(double[] y, int period) {
         /**
          double sum = 0;
-
          for (int i = 0; i < period; i++) {
          sum += y[i];
          }
-
          return sum / period;
          **/
         return y[0];
@@ -239,7 +237,7 @@ public class TripleExponentialImpl {
 
     public static void main(String[] args) {
         // TODO start
-        int period = 6, m = 1;
+        int period = 1, m = 1;
         List<String> records = new ArrayList<>();
         records.add("40");
         records.add("35");
@@ -253,6 +251,7 @@ public class TripleExponentialImpl {
         records.add("34");
         records.add("34");
         records.add("34");
+        records.add("45");
         // TODO end
         double[] real = new double[records.size()];
         for (int i = 0; i < records.size(); i++) {
@@ -266,12 +265,15 @@ public class TripleExponentialImpl {
             System.out.println(predict[i]);
         }
         // TODO test
-        // 28.67226944335269
-        // 38.26696474321283
-        // 35.821094374271695
-        // 34.256049941302216
-        // 40.50454011851802
-        System.out.println((28.67226944335269 + 38.26696474321283 + 35.821094374271695
-                + 34.256049941302216 + 40.50454011851802) / 5);
+        // 36.64707954494079 6
+        // 30.309483124206825 5
+        // 36.96437267934931 4
+        // 38.42057394991909 3
+        // 30.07780441549877 2
+        System.out.println((36.64707954494079
+                + 30.309483124206825
+                + 36.96437267934931
+                + 38.42057394991909
+                + 30.07780441549877) / 5);
     }
 }
