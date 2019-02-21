@@ -237,7 +237,7 @@ public class TripleExponentialImpl {
 
     public static void main(String[] args) {
         // TODO start
-        int period = 1, m = 1;
+        int period = 6, m = 1;
         List<String> records = new ArrayList<>();
         records.add("40");
         records.add("35");
@@ -275,5 +275,6 @@ public class TripleExponentialImpl {
                 + 36.96437267934931
                 + 38.42057394991909
                 + 30.07780441549877) / 5);
+        // 34.48386274278296
     }
 }
